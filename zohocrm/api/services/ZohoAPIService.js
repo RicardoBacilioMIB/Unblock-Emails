@@ -19,6 +19,15 @@ module.exports = {
     } catch (error) {
       throw error;
     }
+  },
+
+  async getPolicy(url, options) {
+    try {
+      const response = await axios.get(url, options);
+      return response;
+    } catch (error) {
+      throw error;
+    }
   }
 
 };
