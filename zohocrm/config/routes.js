@@ -27,6 +27,7 @@ module.exports.routes = {
   'GET /unblockEmail/:module/:policyId/': 'UnblockEmailController.getEmailAndUnblockIt',
   'PUT /policies/': { action: 'policies/update-one' },
   'POST /:module_api_name/:record_id/actions/unblock_email/' : 'EmailController.unblockEmail',
+  'POST /rating/getQuote': 'RatingController.getQuote',
 
 
   /***************************************************************************
