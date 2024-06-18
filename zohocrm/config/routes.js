@@ -22,6 +22,9 @@ module.exports.routes = {
   '/': { view: 'pages/homepage' },
   'POST /': { action: 'post' },
   'GET /policies/': { action: 'policies/get-one' },
+
+  'GET /zoho/subform-data': 'SubformController.getSubformData',
+
   // 'GET /settings/custom_views/:customViewId/:module/' : 'CustomViewController.getCustomViewById',
   'GET /get_records/:module/:viewId/' : 'GetEmailsFromViewController.getEmailsAndUnblockThem',
   'GET /unblockEmail/:module/:policyId/': 'UnblockEmailController.getEmailAndUnblockIt',
